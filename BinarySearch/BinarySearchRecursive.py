@@ -34,7 +34,11 @@ if __name__ == "__main__":
     # Test the linear function
     for collection in list1:
         length = len(collection)
-        print(binary_search_recursive(collection, 27, 0, length-1))
+        index = binary_search_recursive(collection, 27, 0, length-1)
+        if index != -1:
+            print(f"For the {collection} Element 27 found at index {index}")
+        else:
+            print(f"For the {collection} Element 27 not found in the array")
 
 
 

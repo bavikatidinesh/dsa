@@ -42,6 +42,9 @@ if __name__ == "__main__":
 
     # Test the linear function
     for collection in list1:
-        print(binary_search(collection, 27))
-
+        index = binary_search(collection, 27)
+        if index != -1:
+            print(f"For the {collection} Element 27 found at index {index}")
+        else:
+            print(f"For the {collection} Element 27 not found in the array")
 
